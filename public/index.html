@@ -4,14 +4,33 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Rollet Raphael Freelance Web</title>
+
+    <script type="application/ld+json">
+       {
+        "@context" : "http://schema.org",
+        "@type" : "LocalBusiness",
+        "name" : "Raphael",
+        "image" : "http://www.rollet-raphael.com/img/logo.d5820305.png",
+        "address" : {
+          "@type" : "PostalAddress",
+          "addressRegion" : "Auvergnes-Rhones-Alpes."
+        },
+        "url" : "http://www.rollet-raphael.com/about"
+      }, {
+        "@context" : "http://schema.org",
+        "@type" : "LocalBusiness",
+        "url" : "http://www.rollet-raphael.com/project"
+      }, {
+        "@context" : "http://schema.org",
+        "@type" : "LocalBusiness",
+        "url" : "https://www.linkedin.com/in/raphael-rollet/"
+      } 
+      </script>
   </head>
   <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
     <div id="app"></div>
-    <!-- built files will be auto injected -->
   </body>
 </html>
