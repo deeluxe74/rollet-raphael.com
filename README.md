@@ -8,10 +8,10 @@
 
 ### Mon site web personnel !
 
-Un site que je voulai original et différent, réaliser dans le but d'obtenir un résultat propre
-et fini. 
-Mais je désirai aussi des fonctionnalité innovante intégrer, grace a un système de swipe, on peut 
-parcourir mes différents projets et les découvrir d'une manière agréable.
+Un site que je voulai original et différent, réaliser dans le but d'obtenir un résultat propre et fini. Mais je désirai 
+aussi des fonctionnalités innovantes intégrer, grâce à un système de swipe, on peut parcourir mes différents projets et les 
+découvrir d'une manière agréable.
+Il intégre différentes autres fonctionnalités que vous pouvez découvrir en le parcourant a l'adresse en bas de se readme.
 
 ### Installation sur votre système
 **Développé en Vue.js (Javascript)** <br>
