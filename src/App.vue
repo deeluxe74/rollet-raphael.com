@@ -292,6 +292,9 @@ p {
   .close-img {
     width: 8vw;
   }
+  .link-share-project {
+    width: 30px!important;
+  }
 }
 
 @media screen and (max-width: 340px){

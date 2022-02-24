@@ -2,10 +2,10 @@
     <div class="nav d-flex flex-row justify-content-between px-2 py-2 w-100">
         <div>
             <a target="_blank" href="mailto:rollet.raphael@gmail.com"><img class="mr-mobile hover-rotate" src="@/assets/img/gmail.png" alt="Boite de messagerie gmail"></a>
-            <a target="_blank" href="https://www.linkedin.com/in/raphael-rollet/"><img class="hover-rotate linkedin mr-mobile" src="@/assets/img/linkedin.png" alt="Contact linkedin"></a>
+            <a target="_blank" href="https://www.linkedin.com/in/rollet-raphael/"><img class="hover-rotate linkedin mr-mobile" src="@/assets/img/linkedin.png" alt="Contact linkedin"></a>
             <a target="_blank" href="https://www.youtube.com/channel/UCJZkKNgLmASmb9EvLQU2saQ"><img class="hover-rotate youtube" src="@/assets/img/youtube.png" alt="Chaine youtube rollet raphael"></a>
         </div>
-        <div class="mr-3"><span class="cl-pink">Update :</span> Octobre 2020</div>
+        <div class="mr-3"><span class="cl-pink">Update :</span> Janvier 2022</div>
     </div>
 </template>
 

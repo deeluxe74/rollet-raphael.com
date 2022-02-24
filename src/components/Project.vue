@@ -35,6 +35,10 @@
                 <div class="global-pic" @mouseup="endAnim" @mouseleave="endAnim" @mousedown="dropImg" @touchstart="dropImg" @touchend="endAnim"><img :class="zoom1 ? 'img-zoom' : ''" :src="require(`@/assets/img/slides/${imageMarvel}.png`)" alt="image de Marvel API" draggable="false"></div>
                 <div class="div-title d-flex justify-content-center"><div @click="displayDetailMarvel = true" @mouseover="zoom1 = true" @mouseleave="zoom1 = false" class="fw-black title-project">Marvel API</div></div>
             </div>
+            <div v-if="activeSlide == 6" key="6">
+                <div class="global-pic" @mouseup="endAnim" @mouseleave="endAnim" @mousedown="dropImg" @touchstart="dropImg" @touchend="endAnim"><img :class="zoom1 ? 'img-zoom' : ''" :src="require(`@/assets/img/slides/${imageGtrsuite}.png`)" alt="image de Gtrsuite" draggable="false"></div>
+                <div class="div-title d-flex justify-content-center"><div @click="displayDetailGtrsuite = true" @mouseover="zoom1 = true" @mouseleave="zoom1 = false" class="fw-black title-project">Gtrsuite</div></div>
+            </div>
         </transition>
         <transition-group name="arrow">
             <svg :class="arrowAppear ? 'arrow arrow-right' : 'none'" viewBox="0 0 290 120" key="1" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -52,6 +56,7 @@
             <lover-want-cash key="3" v-if="displayDetailLover" @backProject="backProjectParent()"></lover-want-cash>
             <valorant-slayer key="4" v-if="displayDetailValorant" @backProject="backProjectParent()"></valorant-slayer>
             <marvel key="5" v-if="displayDetailMarvel" @backProject="backProjectParent()"></marvel>
+            <gtrsuite key="6" v-if="displayDetailGtrsuite" @backProject="backProjectParent()"></gtrsuite>
         </transition>
     </div>
 </template>
@@ -62,8 +67,7 @@ import Spa from './shares/project/Spa';
 import LoverWantCash from './shares/project/Lover';
 import ValorantSlayer from './shares/project/Valorant';
 import Marvel from './shares/project/Marvel';
-
-
+import Gtrsuite from './shares/project/Gtrsuite';
 
 export default {
     components: {
@@ -71,7 +75,8 @@ export default {
         Spa,
         LoverWantCash,
         ValorantSlayer,
-        Marvel
+        Marvel,
+        Gtrsuite,
     },
     data(){
         return{
@@ -89,14 +94,13 @@ export default {
             displayDetailLover: false,
             displayDetailValorant: false,
             displayDetailMarvel: false,
+            displayDetailGtrsuite: false,
             imageSpa: 'presentation-spa-marlioz',
             imageInde: 'presentation-indeliable',
             imageLover: 'presentation-lover-want-cash',
             imageValorant: 'presentation-valorant',
             imageMarvel: 'presentation-marvel',
-
-
-            
+            imageGtrsuite: 'presentation-gtrsuite',
         }
     },
     methods: {
@@ -128,12 +132,12 @@ export default {
                         if(this.activeSlide >= 2){
                             this.activeSlide -= 1;
                         }else {
-                            this.activeSlide = 5;
+                            this.activeSlide = 6;
                         }
                         this.modeSlide = 'reverseSlide';
                         this.isClick = false;
                     }else {
-                        if(this.activeSlide <= 4){
+                        if(this.activeSlide <= 5){
                             this.activeSlide += 1;
                         }else {
                             this.activeSlide = 1;
@@ -158,6 +162,7 @@ export default {
                     this.displayDetailLover = false;
                     this.displayDetailValorant = false;
                     this.displayDetailMarvel = false;
+                    this.displayDetailGtrsuite = false;
                     clearInterval(scrollInterval);
                 }
             }, 100);
@@ -177,6 +182,7 @@ export default {
             this.imageLover = 'mobile/presentation-lover-want-cash';
             this.imageValorant = 'mobile/presentation-valorant';
             this.imageMarvel = 'mobile/presentation-marvel';
+            this.imageGtrsuite = 'mobile/presentation-gtrsuite';
         }
 
         window.addEventListener('mousemove', this.mouseMove);

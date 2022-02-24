@@ -121,7 +121,7 @@ export default {
     Développeur dans la région Rhône-alpes.
     
     Email : rollet.raphael@gmail.com
-    Linkedin: https://www.linkedin.com/in/raphael-rollet/
+    Linkedin: https://www.linkedin.com/in/rollet-raphael/
     Youtube: https://www.youtube.com/channel/UCJZkKNgLmASmb9EvLQU2saQ/
 
     *****************************************************`);

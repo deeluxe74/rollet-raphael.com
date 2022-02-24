@@ -11,7 +11,7 @@
                     <h1 class="region"><span class="cl-pink">D</span>esigner <strong>Région Annecy & Rhone-Alpes</strong></h1>
                 </div>
                 <div class="icon-scroll"></div>
-                <img class="profil-picture" src="@/assets/img/profil.png" alt="Photo de profil (raphael rollet)">
+                <img class="profil-picture" src="@/assets/img/profil1.png" alt="Photo de profil (raphael rollet)">
             </div>
             
             <div key="2" v-if="slide == 2" class="bloc-2 pt-4">
@@ -44,7 +44,7 @@
                 <p class="final-sentence mt-5">Vous avez un projet en tête ? Contacter moi.</p>        
                 
                 <div class="d-flex flex-row-reverse justify-content-between py-4">
-                    <div><a target="_blank" href="https://www.linkedin.com/in/raphael-rollet"><div class="badge badge-dark hover">linkedin.com/in/raphael-rollet</div></a></div>
+                    <div><a target="_blank" href="https://www.linkedin.com/in/rollet-raphael/"><div class="badge badge-dark hover">linkedin.com/in/rollet-raphael</div></a></div>
                     <a target="_blank" href="mailto:rollet.raphael@gmail.com"><div class="badge bg-pink mt-5 hover"><span>rollet.raphael@gmail.com</span></div></a>
                 </div>
 
